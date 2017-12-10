@@ -25,17 +25,11 @@ void Game::run(int argc, char **argv)
     tetromino.board = &board;
 
     glutInit(&argc, argv);
-#ifdef __APPLE__
-    glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGBA | GLUT_DOUBLE);
-#else
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
-#endif
     glutInitWindowSize(340, 600);
     glutCreateWindow("Xetris!");
 
-#ifndef __APPLE__
     glewInit();
-#endif
 
     reset();
     init();
