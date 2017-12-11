@@ -50,8 +50,8 @@ const vec4 kDefaultColors[kNumOfColors] =
 
 const int kBlockEmpty = -1;
 
-double kDefaultInterval = 623;
+const double kDefaultInterval = 623;
 const double kIntervalSpeedUp = 1;
-double kMinimumInterval = 100;
+const double kMinimumInterval = 100;
 
 #endif
