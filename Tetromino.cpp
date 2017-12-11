@@ -82,10 +82,6 @@ void Tetromino::reset()
     color_id = (color_id + 1) % kNumOfColors;
     
     gettimeofday(&start_time, NULL);
-
-    if (interval > kMinimumInterval) {
-        interval /= kIntervalSpeedUp;
-    }
 }
 
 void Tetromino::left()
